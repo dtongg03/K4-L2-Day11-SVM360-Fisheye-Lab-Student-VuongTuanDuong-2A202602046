@@ -29,7 +29,7 @@ Bảng này xác định vai của nhóm. Vòng QA tự sinh trong team.json thu
 | Mốc                              | Người giao → nhận | File / commit / mã khóa             | Người nhận đã kiểm gì? | Trạng thái / vướng mắc |
 | --------------------------------- | --------------------- | ------------------------------------- | ----------------------------- | --------------------------- |
 | P0 · Chốt môi trường và vai | C → A, B             | `00_setup/mode.json` (slice B4-center, self = Khuat Tuan Anh), `doctor.txt`, `sensor_context.md`; `parking/annotations.xml` + `observations.md` (CVAT task #46, job #45); nháp `45_sampling_plan.csv` | A: parking export nhận 4 `parking_line` + 1 `free_space`; B: soát vai trò vạch trong `observations.md` | Xong. doctor chỉ cảnh báo chưa có `gh`, cần tự kiểm repo Public |
-| P2 · Khóa bản đầu            | A → B, C             | [XML, lock.txt, slice, code, commit]  | [Điền]                      | [Điền]                    |
+| P2 · Khóa bản đầu            | A → B, C             | `r1_craft/annotations.xml`, `lock.txt`, `selfqc.md`; slice B4-center; mã khóa **D9C5-98BB** (CVAT task #48); C0 calib khóa DFD6-CC25 | B nhận đúng file + mã trong lock.txt; C kiểm selfqc 9/9 mục đã tick và 4 dòng r1_craft trong findings | Xong. 3 ca chưa chắc ghi cuối selfqc.md chuyển cho QA |
 | P3 · Chốt QA mù                | B → C, A             | [review, findings, ảnh, commit]      | [Điền]                      | [Điền]                    |
 | P4 · Quyết định sửa          | C → A, B             | [finding, decision log, commit]       | [Điền]                      | [Điền]                    |
 | P5 · Kiểm bản sửa             | A → B → C           | [v2, lock2, review kiểm lại, delta] | [Điền]                      | [Điền]                    |
