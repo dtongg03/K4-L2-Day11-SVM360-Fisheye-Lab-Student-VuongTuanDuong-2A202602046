@@ -8,7 +8,7 @@
 - Máy giữ hồ sơ chính / người quản lý: Khuất Tuấn Anh
 - Slice chung lấy từ mode.json: B4-center
 - Tên định danh vai A dùng cho --self: Khuat Tuan Anh
-- Kênh trao đổi nội bộ: [Điền]
+- Kênh trao đổi nội bộ: Discord
 - Đại diện nộp (vai C): Lê Ngọc Nam, 2A202602060
 - Commit chốt bài: [SHA hoặc URL commit]
 
