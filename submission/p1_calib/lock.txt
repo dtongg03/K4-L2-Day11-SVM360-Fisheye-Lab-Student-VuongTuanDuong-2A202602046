@@ -1,0 +1,9 @@
+round: calib
+slice: C0
+sha256: dfd6cc25e65d299782ccd5532949399bed41ab9baa6f12f7f546b9bd722608a4
+code: DFD6-CC25
+locked_at: 2026-09-29T10:49:45+07:00
+shapes: box=7, polygon=3
+prefill_kept: 0
+prefill_edited: 0
+new: 7

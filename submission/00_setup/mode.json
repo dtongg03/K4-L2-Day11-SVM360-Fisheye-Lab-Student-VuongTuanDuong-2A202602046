@@ -1,0 +1,19 @@
+{
+  "members": [
+    "Khuat Tuan Anh",
+    "Le Ngoc Nam",
+    "Vuong Tuan Duong"
+  ],
+  "assignments": {
+    "Khuat Tuan Anh": "B4-center",
+    "Le Ngoc Nam": "B1-center",
+    "Vuong Tuan Duong": "B2-center"
+  },
+  "self": "Khuat Tuan Anh",
+  "slice": "B4-center",
+  "degrade": [],
+  "current_slice": "C0",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": []
+}

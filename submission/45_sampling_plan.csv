@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,25,"Xe/người ở vùng center-mid ban ngày, đông vừa","Front thấy nhiều đối tượng nhất và là nguồn chính cho cảnh báo phía trước; cần đủ ca thường để đo độ ổn định class Car/Bike/Pedestrian. Lấy rải theo nhiều chuyến/cảnh, không lấy frame liền nhau"
+front,hard,35,"Vật ở rìa vòng kính bị cong, rider, người dắt xe, che khuất, đêm/ngược sáng","Lỗi ADASIND tập trung ở edge (box cong, truncated) và rider/Bike; front có mật độ người đi bộ và xe hai bánh cao nhất nên nhận phần hard lớn nhất. Mỗi cảnh tối đa 2-3 frame cách nhau đủ xa"
+rear,normal,20,"Xe bám đuôi, bãi đỗ khi lùi, vật ở tầm gần","Ca thường của rear cần cho cảnh lùi xe/đỗ xe; ít đối tượng hơn front nên phân bổ thấp hơn, vẫn đủ để phát hiện lệch class"
+rear,hard,30,"Vật thấp sát cản sau, trẻ em/người sau xe, ego_body (cản/biển số) che, đèn hậu chói đêm","Rủi ro va chạm khi lùi cao, vật thấp gần ngưỡng 40 px và vùng ego che dễ sai IGNORE_SCOPE; cần hard slice riêng"
+left,normal,20,"Xe song song, lề đường, xe máy vượt bên","Camera hông thấy vật đi ngang nhanh, hình dạng méo mạnh; ca thường giúp kiểm hình học box ở mid-edge"
+left,hard,25,"Vùng seam với front/rear, gương/thân xe ego che, xe máy sát thân xe, curb","Seam gây một vật hai box ở hai camera; gương và thân xe tạo vùng ignore lớn. Chọn ca có vật đi qua seam để thử policy ghép box"
+right,normal,20,"Lề phải, người đi bộ trên vỉa hè, xe đỗ ven đường","Đối xứng với left nhưng phân bố vật khác theo chiều lưu thông; tách riêng để không suy từ camera trái sang phải"
+right,hard,25,"Vùng seam, người/xe hai bánh sát lề, cửa xe mở, vùng tối dưới gầm","Ca gần thân xe và seam là nơi dễ DUPLICATE/MISSING; cần hard slice riêng để đo trước khi gọi gold"
