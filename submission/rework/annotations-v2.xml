@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>48</id>
+      <name>Day11 · ADASIND · B4-center · raw_fisheye</name>
+      <size>3</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-09-29 03:53:05.664174+00:00</created>
+      <updated>2026-09-29 04:46:02.493516+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>2</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>47</id>
+          <start>0</start>
+          <stop>2</stop>
+          <url>http://localhost:8080/api/tasks/48/dataset/export/api/jobs/47</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>ppmelon2004@gmail.com</username>
+        <email>ppmelon2004@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Bus</name>
+          <color>#ff8c00</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Bike</name>
+          <color>#00d0ff</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Car</name>
+          <color>#7cff00</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Pedestrian</name>
+          <color>#ff3b30</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Truck</name>
+          <color>#a05aff</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>ThreeWheeler</name>
+          <color>#ffd400</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>ignore_region</name>
+          <color>#808080</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>reason</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>ego_body</default_value>
+              <values>ego_body
+lens_border
+crowd_or_group
+unreadable
+privacy_or_policy</values>
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2026-09-29 04:46:12.441204+00:00</dumped>
+  </meta>
+  <image id="0" name="adasind_270517.jpg" width="1080" height="1920">
+    <polygon label="ignore_region" source="manual" occluded="0" points="0.00,1020.00;45.00,1025.00;72.00,1045.00;75.00,1080.00;55.00,1100.00;48.00,1200.00;50.00,1300.00;58.00,1400.00;68.00,1500.00;82.00,1580.00;120.00,1600.00;145.00,1650.00;140.00,1700.00;120.00,1738.00;60.00,1712.00;0.00,1683.00" z_order="0">
+      <attribute name="reason">ego_body</attribute>
+    </polygon>
+    <polygon label="ignore_region" source="manual" occluded="0" points="0.00,770.00;16.00,770.00;16.00,895.00;0.00,895.00" z_order="0">
+      <attribute name="reason">unreadable</attribute>
+    </polygon>
+    <polygon label="ThreeWheeler" source="manual" occluded="0" points="465.00,745.00;505.00,719.00;600.00,714.00;650.00,718.00;700.00,722.00;760.00,733.00;800.00,748.00;810.00,800.00;815.00,880.00;817.00,950.00;795.00,980.00;740.00,982.00;600.00,978.00;530.00,970.00;480.00,945.00;455.00,905.00;452.00,850.00;458.00,790.00" z_order="0" group_id="2">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </polygon>
+    <polygon label="ignore_region" source="file" occluded="0" points="1080.00,986.60;1080.00,1920.00;0.00,1920.00;0.00,986.60;0.00,986.60;0.00,1057.32;0.00,1127.50;0.00,1196.61;0.00,1264.12;0.00,1329.51;0.00,1392.30;0.00,1452.00;0.00,1508.16;0.00,1560.35;0.00,1608.17;0.00,1651.26;11.20,1689.29;73.99,1721.98;139.38,1749.07;206.89,1770.35;276.00,1785.67;346.18,1794.91;416.90,1798.00;487.62,1794.91;557.80,1785.67;626.91,1770.35;694.42,1749.07;759.81,1721.98;822.60,1689.29;882.30,1651.26;938.46,1608.17;990.65,1560.35;1038.47,1508.16;1080.00,1452.00;1080.00,1392.30;1080.00,1329.51;1080.00,1264.12;1080.00,1196.61;1080.00,1127.50;1080.00,1057.32;1080.00,986.60" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <polygon label="ignore_region" source="file" occluded="0" points="0.00,986.60;0.00,0.00;1080.00,0.00;1080.00,986.60;1080.00,915.88;1080.00,845.70;1080.00,776.59;1080.00,709.08;1080.00,643.69;1080.00,580.90;1080.00,521.20;1038.47,465.04;990.65,412.85;938.46,365.03;882.30,321.94;822.60,283.91;759.81,251.22;694.42,224.13;626.91,202.85;557.80,187.53;487.62,178.29;416.90,175.20;346.18,178.29;276.00,187.53;206.89,202.85;139.38,224.13;73.99,251.22;11.20,283.91;0.00,321.94;0.00,365.03;0.00,412.85;0.00,465.04;0.00,521.20;0.00,580.90;0.00,643.69;0.00,709.08;0.00,776.59;0.00,845.70;0.00,915.88;0.00,986.60" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <polygon label="Bike" source="manual" occluded="0" points="1045.00,955.00;1079.00,960.00;1079.00,1180.00;1040.00,1178.00;1018.00,1150.00;1012.00,1100.00;1020.00,1040.00;1040.00,1000.00;1035.00,975.00" z_order="0" group_id="1">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">true</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </polygon>
+    <box label="ThreeWheeler" source="file" occluded="0" xtl="452.00" ytl="713.00" xbr="817.00" ybr="982.00" z_order="0" group_id="2">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Bike" source="file" occluded="0" xtl="1012.00" ytl="953.00" xbr="1079.00" ybr="1180.00" z_order="0" group_id="1">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">true</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </box>
+    <box label="Car" source="file" occluded="1" xtl="274.00" ytl="755.00" xbr="350.00" ybr="827.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Car" source="file" occluded="0" xtl="44.00" ytl="765.00" xbr="119.00" ybr="840.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="ThreeWheeler" source="manual" occluded="0" xtl="171.00" ytl="737.00" xbr="269.00" ybr="883.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="322.00" ytl="748.00" xbr="410.00" ybr="905.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Bike" source="manual" occluded="1" xtl="811.00" ytl="848.00" xbr="879.00" ybr="916.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+  </image>
+  <image id="1" name="adasind_271039.jpg" width="1080" height="1920">
+    <box label="Pedestrian" source="manual" occluded="1" xtl="394.00" ytl="824.00" xbr="419.00" ybr="903.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="ignore_region" source="file" occluded="0" points="0.00,891.50;0.00,0.00;1080.00,0.00;1080.00,891.50;1080.00,822.43;1080.00,753.88;1080.00,686.39;1080.00,620.45;1080.00,556.58;1080.00,495.25;1080.00,436.94;1080.00,382.09;1056.48,331.12;1005.51,284.41;950.66,242.32;892.35,205.17;831.02,173.25;767.15,146.79;701.21,126.00;633.72,111.04;565.17,102.02;496.10,99.00;427.03,102.02;358.48,111.04;290.99,126.00;225.05,146.79;161.18,173.25;99.85,205.17;41.54,242.32;0.00,284.41;0.00,331.12;0.00,382.09;0.00,436.94;0.00,495.25;0.00,556.58;0.00,620.45;0.00,686.39;0.00,753.88;0.00,822.43;0.00,891.50" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <polygon label="ignore_region" source="file" occluded="0" points="1080.00,891.50;1080.00,1920.00;0.00,1920.00;0.00,891.50;0.00,891.50;0.00,960.57;0.00,1029.12;0.00,1096.61;0.00,1162.55;0.00,1226.42;0.00,1287.75;0.00,1346.06;0.00,1400.91;0.00,1451.88;0.00,1498.59;41.54,1540.68;99.85,1577.83;161.18,1609.75;225.05,1636.21;290.99,1657.00;358.48,1671.96;427.03,1680.98;496.10,1684.00;565.17,1680.98;633.72,1671.96;701.21,1657.00;767.15,1636.21;831.02,1609.75;892.35,1577.83;950.66,1540.68;1005.51,1498.59;1056.48,1451.88;1080.00,1400.91;1080.00,1346.06;1080.00,1287.75;1080.00,1226.42;1080.00,1162.55;1080.00,1096.61;1080.00,1029.12;1080.00,960.57;1080.00,891.50" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <box label="Pedestrian" source="manual" occluded="1" xtl="266.00" ytl="826.00" xbr="293.00" ybr="906.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="281.00" ytl="822.00" xbr="311.00" ybr="931.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="316.00" ytl="820.00" xbr="359.00" ybr="936.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="394.00" ytl="820.00" xbr="440.00" ybr="935.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="1" xtl="434.00" ytl="815.00" xbr="463.00" ybr="875.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Bike" source="manual" occluded="1" xtl="424.00" ytl="873.00" xbr="453.00" ybr="946.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="1" xtl="991.00" ytl="837.00" xbr="1030.00" ybr="970.00" z_order="0" group_id="3">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </box>
+    <polygon label="Pedestrian" source="manual" occluded="1" points="1003.00,840.00;1015.00,837.00;1022.00,845.00;1028.00,870.00;1030.00,905.00;1022.00,930.00;1020.00,965.00;1008.00,970.00;998.00,965.00;996.00,920.00;991.00,880.00;996.00,860.00" z_order="0" group_id="3">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </polygon>
+    <polygon label="ThreeWheeler" source="manual" occluded="1" points="8.00,835.00;25.00,831.00;33.00,840.00;33.00,885.00;10.00,885.00;6.00,870.00;6.00,845.00" z_order="0" group_id="4">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </polygon>
+    <box label="ThreeWheeler" source="manual" occluded="1" xtl="196.00" ytl="825.00" xbr="318.00" ybr="900.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="447.00" ytl="819.00" xbr="814.00" ybr="1015.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Car" source="manual" occluded="0" xtl="27.00" ytl="817.00" xbr="96.00" ybr="906.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="ThreeWheeler" source="manual" occluded="1" xtl="6.00" ytl="831.00" xbr="33.00" ybr="885.00" z_order="0" group_id="4">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">true</attribute>
+    </box>
+    <box label="ThreeWheeler" source="manual" occluded="0" xtl="107.00" ytl="810.00" xbr="158.00" ybr="870.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="1" xtl="77.00" ytl="804.00" xbr="102.00" ybr="858.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="224.00" ytl="822.00" xbr="250.00" ybr="905.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+  </image>
+  <image id="2" name="adasind_295948.jpg" width="1080" height="1920">
+    <polygon label="ignore_region" source="file" occluded="0" points="1080.00,968.90;1080.00,1920.00;0.00,1920.00;0.00,968.90;0.00,968.90;0.00,1039.92;0.00,1110.41;0.00,1179.81;0.00,1247.61;0.00,1313.29;0.00,1376.35;0.00,1436.31;0.00,1492.71;0.00,1545.12;0.00,1593.15;0.00,1636.43;49.85,1674.62;112.91,1707.45;178.59,1734.66;246.39,1756.03;315.79,1771.42;386.28,1780.70;457.30,1783.80;528.32,1780.70;598.81,1771.42;668.21,1756.03;736.01,1734.66;801.69,1707.45;864.75,1674.62;924.71,1636.43;981.11,1593.15;1033.52,1545.12;1080.00,1492.71;1080.00,1436.31;1080.00,1376.35;1080.00,1313.29;1080.00,1247.61;1080.00,1179.81;1080.00,1110.41;1080.00,1039.92;1080.00,968.90" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <polygon label="ignore_region" source="file" occluded="0" points="0.00,968.90;0.00,0.00;1080.00,0.00;1080.00,968.90;1080.00,897.88;1080.00,827.39;1080.00,757.99;1080.00,690.19;1080.00,624.51;1080.00,561.45;1080.00,501.49;1080.00,445.09;1033.52,392.68;981.11,344.65;924.71,301.37;864.75,263.18;801.69,230.35;736.01,203.14;668.21,181.77;598.81,166.38;528.32,157.10;457.30,154.00;386.28,157.10;315.79,166.38;246.39,181.77;178.59,203.14;112.91,230.35;49.85,263.18;0.00,301.37;0.00,344.65;0.00,392.68;0.00,445.09;0.00,501.49;0.00,561.45;0.00,624.51;0.00,690.19;0.00,757.99;0.00,827.39;0.00,897.88;0.00,968.90" z_order="0">
+      <attribute name="reason">lens_border</attribute>
+    </polygon>
+    <box label="Bike" source="manual" occluded="1" xtl="0.00" ytl="895.00" xbr="138.00" ybr="1212.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">true</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="ThreeWheeler" source="manual" occluded="1" xtl="60.00" ytl="922.00" xbr="120.00" ybr="1018.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="1" xtl="110.00" ytl="920.00" xbr="140.00" ybr="1018.00" z_order="0">
+      <attribute name="occluded">true</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Pedestrian" source="manual" occluded="0" xtl="148.00" ytl="928.00" xbr="192.00" ybr="1020.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <polygon label="ignore_region" source="manual" occluded="0" points="0.00,1212.00;60.00,1203.00;130.00,1208.00;185.00,1235.00;210.00,1280.00;205.00,1330.00;165.00,1390.00;135.00,1440.00;160.00,1480.00;190.00,1540.00;212.00,1610.00;222.00,1700.00;220.00,1745.00;110.00,1715.00;0.00,1643.00" z_order="0">
+      <attribute name="reason">ego_body</attribute>
+    </polygon>
+    <box label="Bike" source="manual" occluded="0" xtl="574.00" ytl="606.00" xbr="1080.00" ybr="1715.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">true</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Truck" source="manual" occluded="0" xtl="320.00" ytl="856.00" xbr="431.00" ybr="1016.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+    <box label="Truck" source="manual" occluded="0" xtl="462.00" ytl="890.00" xbr="654.00" ybr="1070.00" z_order="0">
+      <attribute name="occluded">false</attribute>
+      <attribute name="truncated">false</attribute>
+      <attribute name="edge_zone">false</attribute>
+    </box>
+  </image>
+</annotations>

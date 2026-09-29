@@ -34,3 +34,17 @@ Mã khóa: D9C5-98BB
 - Số nhận xét: 6 (1 mức P0 cần ưu tiên: ego_body_2; 2 nghi thiếu/thừa theo R01; 3 cần A giải thích thêm).
 - Ca chưa rõ: người sau xe hàng rong `271039`, phân loại L14.
 - QA đã chốt trước khi mở reference/model. A phản hồi sau mốc này; C phân xử ở P4.
+
+## Kiểm lại sau rework (P5, B · Vương Tuấn Dương)
+
+Kiểm trên `submission/rework/annotations-v2.xml` (lock2 1C9E-1D1E), đối chiếu từng quyết định rework trong
+`40_decision_log.csv` với ảnh gốc:
+
+| frame | quyết định | kết quả kiểm lại |
+|---|---|---|
+| adasind_295948.jpg | D1: bỏ ego_body_2, thêm Bike | Đạt. Polygon bên phải đã xóa; box Bike [574,606,1080,1715] ôm người + xe đạp, từ khăn trên đầu tới bàn chân trên pedal, truncated=true. ego_body dưới-trái giữ nguyên. |
+| adasind_271039.jpg | D2: gộp L2+L16 | Đạt. Còn một box ThreeWheeler [196,825,318,900], không còn cạnh cắt ở x=258. |
+| adasind_270517.jpg | D3: bỏ L8 | Đạt. Không còn box ở dải tối sau auto. |
+| adasind_295948.jpg | D3: bỏ L6 | Đạt. Không còn box trước biển đỏ. |
+
+Không phát hiện thay đổi ngoài bốn ca trên (số hình 45 → 42: bỏ 4, thêm 1).
