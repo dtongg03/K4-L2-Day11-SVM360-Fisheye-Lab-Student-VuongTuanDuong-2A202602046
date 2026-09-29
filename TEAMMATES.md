@@ -17,9 +17,9 @@
 
 | Vai                              | Họ và tên          | MSSV        | Tên định danh trong mode | Trách nhiệm                                                | Bằng chứng đóng góp                       |
 | -------------------------------- | --------------------- | ----------- | --------------------------- | ------------------------------------------------------------ | ---------------------------------------------- |
-| A · Gán nhãn                  | Khuất Tuấn Anh      | 2A202602259 | Khuat Tuan Anh              | Parking/C0/slice, self-QC, lock, rework                      | [Link file/commit và mô tả phần đã làm] |
-| B · QA độc lập               | Vương Tuấn Dương | 2A202602046 | Vuong Tuan Duong            | Review trước reference, finding QA, kiểm lại ca sửa     | [Link file/commit và mô tả phần đã làm] |
-| C · Chẩn đoán & điều phối | Lê Ngọc Nam         | 2A202602060 | Le Ngoc Nam                 | Báo cáo, phân xử, kế hoạch, tích hợp, check và nộp | [Link file/commit và mô tả phần đã làm] |
+| A · Gán nhãn                  | Khuất Tuấn Anh      | 2A202602259 | Khuat Tuan Anh              | Parking/C0/slice, self-QC, lock, rework                      | `parking/`, `p1_calib/` (DFD6-CC25), `r1_craft/` (D9C5-98BB, selfqc 9/9), `rework/` (1C9E-1D1E); findings calib + r1_craft; commit 79f81d4, b5be810 |
+| B · QA độc lập               | Vương Tuấn Dương | 2A202602046 | Vuong Tuan Duong            | Review trước reference, finding QA, kiểm lại ca sửa     | `r2_qa/qa_review.md` (6 nhận xét + kiểm lại 4 ca rework), 5 dòng r2_qa, `screenshots/qa_*.jpg`; commit 7b24e63 (QA chốt trước reference) |
+| C · Chẩn đoán & điều phối | Lê Ngọc Nam         | 2A202602060 | Le Ngoc Nam                 | Báo cáo, phân xử, kế hoạch, tích hợp, check và nộp | `00_setup/`, `r3_diag/`, 27 dòng r3_diag, `40_decision_log.csv`, `10_error_card.md`, `20/30/45/46/50`, `manifest.json`; commit e041944, 8d682f2 |
 
 Bảng này xác định vai của nhóm. Vòng QA tự sinh trong team.json thuộc quy trình nhiều hồ sơ của CLI; nhóm dùng một slice chung và quy trình A → B → C đã nêu trong hướng dẫn.
 
@@ -33,7 +33,7 @@ Bảng này xác định vai của nhóm. Vòng QA tự sinh trong team.json thu
 | P3 · Chốt QA mù                | B → C, A             | `r2_qa/qa_review.md`, `qa_overlay.html`, 5 dòng r2_qa trong findings, 6 ảnh `screenshots/qa_*.jpg`; QA trên mã D9C5-98BB | C: mỗi nhận xét có frame → object_ref → rule → ảnh; XML vẫn là bản A đã khóa; chưa mở reference/model | QA đã chốt: 6 nhận xét (1 P0 ego_body_2). Ca chưa rõ: người sau xe hàng rong 271039, class L14 |
 | P4 · Quyết định sửa          | C → A, B             | `r3_diag/` (compare, local_quality, model_compare, iou_sweep, zone_table), 27 dòng r3_diag trong findings, `40_decision_log.csv` D1–D8 | A: nhận 4 việc rework (D1–D3); B: đối chiếu từng quyết định với nhận xét QA ban đầu | Xong. Rework: ego_body_2→Bike, gộp L2+L16, bỏ 270517 L8 và 295948 L6. Escalate D4, D5. Mở: D7, D8 |
 | P5 · Kiểm bản sửa             | A → B → C           | `rework/annotations-v2.xml`, `lock2.txt` (mã **1C9E-1D1E**), `delta.md`; mục "Kiểm lại sau rework" trong `r2_qa/qa_review.md` | B: 4/4 ca rework đạt trên ảnh; C: số trước/sau gắn với D1–D3 | Xong. mid missing 1→0, center spurious 7→4; L2/L16 vẫn SPURIOUS vì reference không có xe này (đã ghi lý do) |
-| P6 · Chốt nộp                  | A, B → C             | [manifest, commit chốt]              | [Điền]                      | [Điền]                    |
+| P6 · Chốt nộp                  | A, B → C             | `10_error_card.md`, `20_guideline_patch.md`, `30_escalation_ticket.md` (2 ticket), `45_review_plan.md`, `45_sampling_plan.csv`, `46_gold_set_plan.md`, `50_exit_ticket.md`, `manifest.json` | C: `check` exit 0, `failed_gates` rỗng; A: nhãn v2 đúng bản khóa; B: ảnh bằng chứng mở được | Chờ commit chốt + push |
 
 ## 4. Bất đồng và phối hợp
 
