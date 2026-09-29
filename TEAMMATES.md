@@ -31,14 +31,18 @@ Bảng này xác định vai của nhóm. Vòng QA tự sinh trong team.json thu
 | P0 · Chốt môi trường và vai | C → A, B             | `00_setup/mode.json` (slice B4-center, self = Khuat Tuan Anh), `doctor.txt`, `sensor_context.md`; `parking/annotations.xml` + `observations.md` (CVAT task #46, job #45); nháp `45_sampling_plan.csv` | A: parking export nhận 4 `parking_line` + 1 `free_space`; B: soát vai trò vạch trong `observations.md` | Xong. doctor chỉ cảnh báo chưa có `gh`, cần tự kiểm repo Public |
 | P2 · Khóa bản đầu            | A → B, C             | `r1_craft/annotations.xml`, `lock.txt`, `selfqc.md`; slice B4-center; mã khóa **D9C5-98BB** (CVAT task #48); C0 calib khóa DFD6-CC25 | B nhận đúng file + mã trong lock.txt; C kiểm selfqc 9/9 mục đã tick và 4 dòng r1_craft trong findings | Xong. 3 ca chưa chắc ghi cuối selfqc.md chuyển cho QA |
 | P3 · Chốt QA mù                | B → C, A             | `r2_qa/qa_review.md`, `qa_overlay.html`, 5 dòng r2_qa trong findings, 6 ảnh `screenshots/qa_*.jpg`; QA trên mã D9C5-98BB | C: mỗi nhận xét có frame → object_ref → rule → ảnh; XML vẫn là bản A đã khóa; chưa mở reference/model | QA đã chốt: 6 nhận xét (1 P0 ego_body_2). Ca chưa rõ: người sau xe hàng rong 271039, class L14 |
-| P4 · Quyết định sửa          | C → A, B             | [finding, decision log, commit]       | [Điền]                      | [Điền]                    |
+| P4 · Quyết định sửa          | C → A, B             | `r3_diag/` (compare, local_quality, model_compare, iou_sweep, zone_table), 27 dòng r3_diag trong findings, `40_decision_log.csv` D1–D8 | A: nhận 4 việc rework (D1–D3); B: đối chiếu từng quyết định với nhận xét QA ban đầu | Xong. Rework: ego_body_2→Bike, gộp L2+L16, bỏ 270517 L8 và 295948 L6. Escalate D4, D5. Mở: D7, D8 |
 | P5 · Kiểm bản sửa             | A → B → C           | [v2, lock2, review kiểm lại, delta] | [Điền]                      | [Điền]                    |
 | P6 · Chốt nộp                  | A, B → C             | [manifest, commit chốt]              | [Điền]                      | [Điền]                    |
 
 ## 4. Bất đồng và phối hợp
 
-- Một ca đã phân xử: [Frame/object/rule; ý kiến A/B; bằng chứng; quyết định và link]
-- Ca còn mở: [Nội dung, người theo dõi, phép kiểm tiếp theo; nếu không còn thì ghi rõ]
+- Một ca đã phân xử: `adasind_295948.jpg`, người quấn khăn caro, R07/R03. A (P2) cho là người lái xe ego nên vẽ
+  ignore `ego_body`; B (P3, trước reference) chỉ ra bánh xe + pedal riêng và frame 270517 cùng chuyến không có người
+  lái trước camera → nghi Bike. C (P4) mở ảnh + reference (R3 Bike truncated) → quyết định rework theo B
+  (`40_decision_log.csv` D1; `screenshots/qa_295948_ego_vs_bike.jpg`; findings r2_qa/r3_diag cùng ca).
+- Ca còn mở: D7 người sau xe hàng rong 271039 (B theo dõi, cần frame lân cận) và D8 L15 người sau van 271039 (E5).
+  Escalation D4, D5 gửi data_ops qua `30_escalation_ticket.md`.
 - Đóng góp của A/B/C vào kế hoạch và exit ticket: [Điền phần việc thực tế]
 - Thay đổi phân công nếu có: [Thời điểm, lý do, người nhận; nếu không đổi thì ghi rõ]
 
