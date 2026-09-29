@@ -10,7 +10,7 @@
 - Tên định danh vai A dùng cho --self: Khuat Tuan Anh
 - Kênh trao đổi nội bộ: Discord
 - Đại diện nộp (vai C): Lê Ngọc Nam, 2A202602060
-- Commit chốt bài: [SHA hoặc URL commit]
+- Commit chốt bài: [627c91e](https://github.com/nstpvcpiooi/K4-DAY11-Lab1129092026/commit/627c91e7e7c101c01003cba10ff5bf607815ef68)
 
 ## 2. Ba vai chính
 
